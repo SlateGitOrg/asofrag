@@ -1,0 +1,136 @@
+{
+  "context_blocks": 5,
+  "fault_plan": {
+    "all_codes_as_expected": true,
+    "all_correct_after_reask": true,
+    "codes_caught": {
+      "CITATION_NOT_RETRIEVED": 2,
+      "CITATION_OUT_OF_FORCE": 2,
+      "QUOTE_NOT_FOUND": 3
+    },
+    "faults": [
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "CITATION_OUT_OF_FORCE",
+        "first_attempt_codes": [
+          "CITATION_OUT_OF_FORCE"
+        ],
+        "kind": "superseded_citation",
+        "question": "Q18"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "CITATION_OUT_OF_FORCE",
+        "first_attempt_codes": [
+          "CITATION_OUT_OF_FORCE"
+        ],
+        "kind": "superseded_citation",
+        "question": "Q25"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "QUOTE_NOT_FOUND",
+        "first_attempt_codes": [
+          "QUOTE_NOT_FOUND"
+        ],
+        "kind": "fabricated_quote",
+        "question": "Q03"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "QUOTE_NOT_FOUND",
+        "first_attempt_codes": [
+          "QUOTE_NOT_FOUND"
+        ],
+        "kind": "fabricated_quote",
+        "question": "Q08"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "QUOTE_NOT_FOUND",
+        "first_attempt_codes": [
+          "QUOTE_NOT_FOUND"
+        ],
+        "kind": "fabricated_quote",
+        "question": "Q09"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "CITATION_NOT_RETRIEVED",
+        "first_attempt_codes": [
+          "CITATION_NOT_RETRIEVED"
+        ],
+        "kind": "unretrieved_citation",
+        "question": "Q10"
+      },
+      {
+        "answered_correctly_after_reask": true,
+        "attempts": 2,
+        "expected_code": "CITATION_NOT_RETRIEVED",
+        "first_attempt_codes": [
+          "CITATION_NOT_RETRIEVED"
+        ],
+        "kind": "unretrieved_citation",
+        "question": "Q11"
+      }
+    ],
+    "injected": 7
+  },
+  "modes": {
+    "asof": {
+      "counts": {
+        "abstained_on_answerable": 0,
+        "abstained_on_gold_abstain": 11,
+        "answerable": 48,
+        "before_change_citing_newer_version": 0,
+        "before_change_questions": 24,
+        "citations": 49,
+        "gold_abstain": 12,
+        "out_of_force_citations": 0,
+        "questions": 60,
+        "unchanged_questions": 16,
+        "unchanged_recall_hits": 16
+      },
+      "metrics": {
+        "abstention_accuracy": 0.9833,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.9167,
+        "answer_accuracy": 1.0,
+        "out_of_force_citation_rate": 0.0,
+        "quote_groundedness": 1.0,
+        "recall_at_3": 1.0
+      }
+    },
+    "naive": {
+      "counts": {
+        "abstained_on_answerable": 0,
+        "abstained_on_gold_abstain": 0,
+        "answerable": 48,
+        "before_change_citing_newer_version": 24,
+        "before_change_questions": 24,
+        "citations": 60,
+        "gold_abstain": 12,
+        "out_of_force_citations": 36,
+        "questions": 60,
+        "unchanged_questions": 16,
+        "unchanged_recall_hits": 16
+      },
+      "metrics": {
+        "abstention_accuracy": 0.4,
+        "abstention_precision": null,
+        "abstention_recall": 0.0,
+        "answer_accuracy": 0.5,
+        "out_of_force_citation_rate": 0.6,
+        "quote_groundedness": 1.0,
+        "recall_at_3": 1.0
+      }
+    }
+  },
+  "questions": 60
+}
